@@ -1,6 +1,6 @@
 // question1
 const array = [2, 4, 7, 5, 4, 3, 8];
-const result = array.filter(function (x, i, self) {
+const result = array.filter((x, i, self) => {
   return self.indexOf(x) === i;
 });
 console.log(result);
@@ -12,9 +12,15 @@ function isLeapYear(year) {
   }
   return false;
 }
-let checkYear = 2020;
+const checkYear = 2020;
 if(isLeapYear(checkYear)){
   console.log(checkYear + '年はうるう年です');
 }else{
   console.log(checkYear + '年はうるう年ではありません');
+}
+const checkYear2 = 2021;
+if(isLeapYear(checkYear2)){
+  console.log(checkYear2 + '年はうるう年です');
+}else{
+  console.log(checkYear2 + '年はうるう年ではありません');
 }
